@@ -1,0 +1,81 @@
+* {
+    font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
+}
+
+.box-container {
+    display: flex;
+    gap: 15px;
+}
+
+.box-container h2 {
+    font-size: 14px;
+}
+.box-container div {
+    padding: 20px;
+    border: 1px  solid;
+    width: 100%;
+}
+
+.box-container div:nth-child(1) {
+    background-color: #eaffea;
+    color: green;
+}
+
+.box-container div:nth-child(2) {
+    background-color: #f6faff;
+    color: blue;
+}
+
+.box-container div:nth-child(3) {
+    background-color: rgba(255, 221, 232, 0.33);
+    color: red;
+}
+
+.box-container div h2,
+.box-container div p {
+   text-align: center;
+}
+
+
+/*Opdracht 2 */
+
+.price-bold {
+    font-size: 18px;
+  font-family: "Arial Narrow";
+}
+.best-TV {
+    display: flex;
+    padding: 20px;
+    background-color: #ededed;
+    padding: 20px;
+    border: 1px gray dotted;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.best-TV div:nth-child(1) {
+    width: 40%;
+}
+.best-TV div:nth-child(1) img {
+    padding: 20px;
+    width: 80%;
+}
+
+.best-TV div:nth-child(2) {
+    /*width: 60%;*/
+}
+
+
+.flexed {
+    display: flex;
+    gap: 6px;
+}
+.flexed-p {
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+.znachki {
+    width: 10px;
+    /*margin-right: 5px;*/
+}

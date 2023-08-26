@@ -1,9 +1,20 @@
 import './App.css';
 
+import BestSellingTv from "./components/BestSellingTv.jsx";
+import BestSellingTvArray from "./components/BestSellingTvArray.jsx";
+import Dashboard from "./components/Dashboard.jsx";
+
+
 function App() {
+
   return (
-    <h1>Begin hier met met maken van de applicatie!</h1>
+      <>
+          <Dashboard/>
+          <BestSellingTv/>
+          <BestSellingTvArray/>
+      </>
   )
 }
+
 
 export default App
