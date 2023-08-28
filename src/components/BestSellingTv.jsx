@@ -4,7 +4,7 @@ const BestSellingTv = () => {
 
     return (
         <>
-        <h3>Best verkochte TV</h3>
+        <h3>Best verkochte TV, hard-coded</h3>
     <div className={"best-TV"}>
         <div>
             <img src={bestSellingTv.sourceImg} />
@@ -18,23 +18,19 @@ const BestSellingTv = () => {
 
                     const cantimetrizedElement = element * 2.54
                     const elementRounded = Math.round(cantimetrizedElement)
-                    console.log("index", index)
-                    console.log("array", array)
-
 
                     //  array = [a, b, c]
                     //  a:index = 0; array.length = 3-1 = 2   FALSE
                     //  b:index = 1; array.length = 3-1 = 2   FALSE
                     //  c:index = 2; array.length = 3-1 = 2   TRUE
 
-
-
                     const lastElement =  index === array.length - 1 ? true : false
-                    console.log("lastElement", lastElement )
+                    // console.log("lastElement", lastElement )
 
                     return (
                             <p key={index} className={"flexed-p"}> { element } inch ({elementRounded} cm)
-                                {lastElement ? " " : " |"} </p>
+                               <span className={"tikkaTurgan"}>  {lastElement ? " " : " |"} </span>
+                            </p>
                     )
                 }) }
             </div>

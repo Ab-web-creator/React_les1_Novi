@@ -259,7 +259,7 @@ export let inventory = [
         name: 'LED TV',
         brand: 'Brandt',
         price: 109,
-        availableSizes: [24],
+        availableSizes: [24, 32],
         refreshRate: 60,
         screenType: 'LED',
         screenQuality: 'Full HD',

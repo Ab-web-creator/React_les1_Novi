@@ -2,6 +2,30 @@
     font-family: 'Zen Kaku Gothic New', Avenir, Helvetica, Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    /*margin: 0;*/
+    background-image: linear-gradient(0.33turn, #3f87a6, #ebf8e1, #f69d3c, #561423);
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 787px) {
+    body {
+        display: flex;
+        justify-content: left;
+    }
+}
+
+.main-container {
+    min-width: 787px;
+    max-width: 870px;
+    padding: 60px;
+    padding-bottom: 80px;
+    /*background-color: rgba(255, 255, 255, 0.5);*/
+}
+
 .box-container {
     display: flex;
     gap: 15px;
@@ -13,6 +37,7 @@
 .box-container div {
     padding: 20px;
     border: 1px  solid;
+    border-radius: 5px;
     width: 100%;
 }
 
@@ -49,6 +74,7 @@
     background-color: #ededed;
     padding: 20px;
     border: 1px gray dotted;
+    border-radius: 5px;
     width: fit-content;
     max-width: 100%;
 }
@@ -68,8 +94,14 @@
 
 .flexed {
     display: flex;
-    gap: 6px;
+    gap: 2px;
 }
+
+.flexed20 {
+    display: flex;
+    gap: 20px;
+}
+
 .flexed-p {
     font-size: 12px;
     text-transform: lowercase;
@@ -77,5 +109,16 @@
 
 .znachki {
     width: 10px;
-    /*margin-right: 5px;*/
+    margin-right: 5px;
+}
+
+.tikkaTurgan {
+    color: red;
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.price-bold {
+    line-height: 1px;
 }

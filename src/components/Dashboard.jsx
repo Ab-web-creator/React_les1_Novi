@@ -1,7 +1,7 @@
-import itemsSold from "../Helpers/itemsSold.js";
 import {inventory} from "../constants/inventory.js";
 import itemsPurchased from "../Helpers/itemsPurchased.js";
 import itemsLeft from "../Helpers/itemsLeft.js";
+import itemsSold from "../Helpers/itemsSold.js";
 
 const Dashboard = () => {
     return (
