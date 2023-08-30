@@ -7,7 +7,7 @@ const Dashboard = () => {
     return (
         <>
             <h1>Tech IT easy dashboard</h1>
-            <h3>Verkoopoverzicht</h3>
+            <h3>Verkoopoverzicht (hard coded)</h3>
             <div className={"box-container"}>
                 <div>
                     <h2 className={"box"}>The number of TVs already sold:  </h2>

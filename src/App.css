@@ -56,6 +56,23 @@ body {
     color: red;
 }
 
+.division1 {
+    background-color: #90fb90 !important;
+    color: #5b8316 !important;
+}
+
+.division2 {
+    background-color: #b1cff4 !important;
+    color: #7c43fc !important;
+}
+
+.division3 {
+    background-color: rgba(242, 146, 177, 0.33) !important;
+    /*color: #f76d6d;*/
+    color: #9f005c !important;
+}
+
+
 .box-container div h2,
 .box-container div p {
    text-align: center;
