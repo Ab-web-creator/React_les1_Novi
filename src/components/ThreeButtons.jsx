@@ -1,28 +1,27 @@
-import mostSoldArray from "../Helpers/mostSoldArray.js";
-import cheapestFirstArray from "../Helpers/cheapestFirstArray.js";
-import sportsFirstArray from "../Helpers/sportsFirstArray.js";
+import {useState} from "react";
 
 const ThreeButtons = () => {
+
+    const [player, setPlayer] = useState('');
+    function Button({ playerName, handlePlayerChange }) {
+        return (
+            <button type="button" onClick={() => handlePlayerChange(playerName)}>
+                {playerName}
+            </button>
+        );
+    }
+
     return (
-        <>
-            <h3>Alle TVs</h3>
-            <div className={"flexed20"}>
-                <div className={"firstButton"}>
-                    <button onClick={mostSoldArray} type="button">Most sold first</button>
-                </div>
-                <div className={"firstButton"}>
-                    <button onClick={cheapestFirstArray} type="button">Cheapest first</button>
-                </div>
-                <div className={"firstButton"}>
-                    <button onClick={sportsFirstArray} type="button">Best for sports first</button>
-                </div>
-            </div>
-        </>
+    <>
+        <h1>{player} is aan de beurt</h1>
+        <section className={"flexed20"}>
+
+        <Button playerName="Bart" handlePlayerChange={setPlayer}/>
+        <Button playerName="Piet" handlePlayerChange={setPlayer}/>
+        <Button playerName="Marie" handlePlayerChange={setPlayer}/>
+        </section>
+    </>
     )
 }
-
-
-
-
 
 export default ThreeButtons;

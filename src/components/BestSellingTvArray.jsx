@@ -1,4 +1,4 @@
-import {bestSellingTv, inventory} from "../constants/inventory.js";
+import {inventory} from "../constants/inventory.js";
 
 const BestSellingTv = () => {
     // get the inventory array, // find the object which has the highest sold key value; //  and save it inside a variable
@@ -25,7 +25,7 @@ const BestSellingTv = () => {
                 <img src={targetObject.sourceImg} />
             </div>
 
-            <div>
+            <section>
                 <h5> {targetObject.brand} {targetObject.type} - {targetObject.name} </h5>
                 <h5 className={"price-bold"}> ${targetObject.price}, - </h5>
                 <div className="flexed">
@@ -41,7 +41,7 @@ const BestSellingTv = () => {
                             </p>
                         )
                     }) }
-            </div>
+                </div>
 
             <p>
                 {  targetObject.options.map((element, index) => {
@@ -52,7 +52,7 @@ const BestSellingTv = () => {
                     )
                 }) }
             </p>
-        </div>
+        </section>
     </div>
         </>
     )

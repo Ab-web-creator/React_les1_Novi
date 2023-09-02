@@ -39,6 +39,7 @@ export const bestSellingTv = {
 // STATISCHE VOORRAAD TV'S
 export let inventory = [
     {
+        id: "1",
         type: '43PUS6504/12',
         name: '4K TV',
         brand: 'Philips',
@@ -75,12 +76,13 @@ export let inventory = [
         sold: 2,
     },
     {
+        id: "2",
         type: 'NH3216SMART',
         name: 'HD smart TV',
         brand: 'Nikkei',
         price: 159,
         availableSizes: [32],
-        refreshRate: 100,
+        refreshRate: 110,
         screenType: 'LED',
         screenQuality: 'HD ready',
         smartTv: true,
@@ -111,6 +113,7 @@ export let inventory = [
         sold: 4,
     },
     {
+        id: "3",
         type: 'QE55Q60T',
         name: '4K QLED TV',
         brand: 'Samsung',
@@ -147,6 +150,7 @@ export let inventory = [
         sold: 0,
     },
     {
+        id: "4",
         type: '43HAK6152',
         name: 'Ultra HD SMART TV',
         brand: 'Hitachi',
@@ -183,6 +187,7 @@ export let inventory = [
         sold: 5,
     },
     {
+        id: "5",
         type: '50PUS7304/12',
         name: 'The One 4K TV',
         brand: 'Philips',
@@ -219,6 +224,7 @@ export let inventory = [
         sold: 3,
     },
     {
+        id: "6",
         type: '55PUS7805',
         name: '4K LED TV',
         brand: 'Philips',
@@ -255,6 +261,7 @@ export let inventory = [
         sold: 3,
     },
     {
+        id: "7",
         type: 'B2450HD',
         name: 'LED TV',
         brand: 'Brandt',
@@ -291,6 +298,7 @@ export let inventory = [
         sold: 8,
     },
     {
+        id: "8",
         type: '32WL1A63DG',
         name: 'HD TV',
         brand: 'Toshiba',
@@ -323,8 +331,8 @@ export let inventory = [
                 applicable: false,
             }
         ],
-        originalStock: 10,
-        sold: 8,
+        originalStock: 7,
+        sold: 18,
     },
 ];
 

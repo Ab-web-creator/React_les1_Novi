@@ -9,47 +9,53 @@ import itemsSold from "./Helpers/itemsSold.js";
 import {inventory} from "./constants/inventory.js";
 import itemsPurchased from "./Helpers/itemsPurchased.js";
 import itemsLeft from "./Helpers/itemsLeft.js";
+import ThreeButtonsBversion from "./components/ThreeButtonsBversion.jsx";
+import Opdracht1a from "./components/partTwoAssignment1a.jsx";
+import Part2Assignment1b from "./components/Part2Assignment1b.jsx";
+import OnChangeHandler from "./components/OnChangeHandler.jsx";
+import DashboardJSX from "./components/DashboardJSX.jsx";
+import PartTwoAssignment1a from "./components/partTwoAssignment1a.jsx";
+import Part2Assignment1c from "./components/Part2Assignment1c.jsx";
+import Part2Assignment1d from "./components/Part2Assignment1d.jsx";
+import Part2Assignment1e from "./components/Part2Assignment1e.jsx";
+import Part2Assignment1f from "./components/Part2Assignment1f.jsx";
 
 
 function App() {
 
   return (
       <>
-      <div className={"main-container"}>
-          {/*//hardcoded dashboard, see the components folder  */}
-          <Dashboard/>
+          <div className={"main-container"}>
+              <DashboardJSX/>
+              {/*//hardcoded dashboard, see the components folder  */}
+              <hr className={"spacer40"}/>
+              <BestSellingTv/>
+              <hr className={"spacer40"}/>
+              <BestSellingTvArray/>
+              <hr className={"spacer40"}/>
+              <ThreeButtonsBversion/>
 
-          <h3>Verkoopoverzicht (component-based) </h3>
+              <hr className={"spacer40"}/>
+              {/*The following one I did only for my own exercise, so do not pay attention to this*/}
+              {/*<ThreeButtons/>*/}
 
-          {/*// soft-coded dashboard2.jsx, using components */}
-          <div className={"box-container"}>
-              <Dashboard2
-                divClassNaam="division1"
-                h2Text={"The number of TVs already sold:"}
-                pClassNaam={"soldTVs"}
-                pFunction={itemsSold}
-              />
-              <Dashboard2
-                  divClassNaam="division2"
-                  h2Text={"The number of TVs acquired:"}
-                  pClassNaam={"acquiredTVS"}
-                  pFunction={itemsPurchased}
-              />
-              <Dashboard2
-                  divClassNaam="division3"
-                  h2Text={"The number still needs to sell:"}
-                  pClassNaam={"needToSell"}
-                  pFunction={itemsLeft}
-              />
-          </div>
-
-          <BestSellingTv/>
-          <BestSellingTvArray/>
-          <ThreeButtons/>
+              <hr className={"spacer40"}/>
+              <p>I added "id" property to the inventory array in order to assign "key"  </p>
+              <PartTwoAssignment1a/>
+              <hr className={"spacer40"}/>
+              <Part2Assignment1b/>
+              <hr className={"spacer40"}/>
+              <Part2Assignment1c/>
+              <hr className={"spacer40"}/>
+              <Part2Assignment1d/>
+              <hr className={"spacer40"}/>
+              <Part2Assignment1e/>
+              <hr className={"spacer40"}/>
+              <Part2Assignment1f/>
       </div>
       </>
   )
 }
 
 
-export default App
+export default App;
